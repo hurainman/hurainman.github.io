@@ -161,40 +161,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="Gulp"><a href="#Gulp" class="headerlink" title="Gulp"></a>Gulp</h1><h2 id="什么是Gulp"><a href="#什么是Gulp" class="headerlink" title="什么是Gulp"></a>什么是Gulp</h2><p> Gulp 是一个自动化构建工具,可以用来提高开发效率 </p>
-<h5 id="Automate-and-enhance-your-workflow"><a href="#Automate-and-enhance-your-workflow" class="headerlink" title="Automate and enhance your workflow"></a>Automate and enhance your workflow</h5><pre><code>&lt;!-- more--&gt;
-</code></pre><h5 id="Gulp-的优点"><a href="#Gulp-的优点" class="headerlink" title="Gulp 的优点:"></a>Gulp 的优点:</h5><ol>
-<li>自动化</li>
-<li>流程控制</li>
-<li>网页性能优化</li>
-<li>减少页面请求的数量</li>
-<li>css,html,tupian的压缩</li>
-<li>代码修改自动刷新浏览器页面,提高开发效率</li>
-<li>方便处理多页面共用代码的部分</li>
-<li>编译less sass </li>
-</ol>
-<h5 id="GET-STARTED"><a href="#GET-STARTED" class="headerlink" title="GET STARTED"></a>GET STARTED</h5><h6 id="全局安装-gulp-cli"><a href="#全局安装-gulp-cli" class="headerlink" title="全局安装 gulp-cli"></a>全局安装 gulp-cli</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm i -g gulp-cli</div></pre></td></tr></table></figure>
-<h6 id="初始化-package-json-文件"><a href="#初始化-package-json-文件" class="headerlink" title="初始化 package.json 文件"></a>初始化 package.json 文件</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm init -y</div></pre></td></tr></table></figure>
-<h6 id="将-gulp-安装到本地项目"><a href="#将-gulp-安装到本地项目" class="headerlink" title="将 gulp 安装到本地项目"></a>将 gulp 安装到本地项目</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm i -g --save-dev gulp</div></pre></td></tr></table></figure>
-<h5 id="在项目目录下创建一个名字为-gulpfile-js-文件并写入以下内容"><a href="#在项目目录下创建一个名字为-gulpfile-js-文件并写入以下内容" class="headerlink" title="在项目目录下创建一个名字为 gulpfile.js 文件并写入以下内容"></a>在项目目录下创建一个名字为 gulpfile.js 文件并写入以下内容</h5><ol>
-<li>引包 </li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var gulp = require(<span class="string">'gulp);</span></div></pre></td></tr></table></figure>
-<ol>
-<li>定义任务 </li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">gulp.task(<span class="string">'default'</span>,<span class="function"><span class="title">function</span></span> () &#123;</div><div class="line">    var foo = <span class="string">'bar'</span>;</div><div class="line">    console.log(foo);</div><div class="line">&#125;);</div><div class="line"></div><div class="line">gulp.task(<span class="string">'sayHello'</span>,<span class="function"><span class="title">function</span></span> () &#123;</div><div class="line">    console.log(<span class="string">'sayHello'</span>);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<ol>
-<li>现在就可以测试任务了</li>
-</ol>
-<p>在命令行中输入以下命令进行测试(需要在项目命令下进行) </p>
-<ul>
-<li>运行默认进程(default)<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ gulp</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li>运行sayHello<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ gulp sayHello</div></pre></td></tr></table></figure></li>
-</ul>
-
+<h5 id="Automate-and-enhance-your-workflow"><a href="#Automate-and-enhance-your-workflow" class="headerlink" title="Automate and enhance your workflow"></a>Automate and enhance your workflow</h5>
+        
+          <a class="article-more-a" href="/2017/10/09/gulp_Introduce/#more">more >></a>
+        
       
 
       
