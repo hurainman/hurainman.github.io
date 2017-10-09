@@ -15,7 +15,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/10/09/gulp_Introduce/index.html">
 <meta property="og:site_name" content="RainMan&#39;s blog">
 <meta property="og:description" content="Gulp什么是Gulp Gulp 是一个自动化构建工具,可以用来提高开发效率  Automate and enhance your workflowGulp 的优点: 自动化 流程控制 网页性能优化 减少页面请求的数量 css,html,tupian的压缩 代码修改自动刷新浏览器页面,提高开发效率 方便处理多页面共用代码的部分 编译less sass   GET STARTED全局安装 gulp-">
-<meta property="og:updated_time" content="2017-10-09T12:51:45.094Z">
+<meta property="og:updated_time" content="2017-10-09T13:27:12.719Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="RainMan&#39;s blog">
 <meta name="twitter:description" content="Gulp什么是Gulp Gulp 是一个自动化构建工具,可以用来提高开发效率  Automate and enhance your workflowGulp 的优点: 自动化 流程控制 网页性能优化 减少页面请求的数量 css,html,tupian的压缩 代码修改自动刷新浏览器页面,提高开发效率 方便处理多页面共用代码的部分 编译less sass   GET STARTED全局安装 gulp-">
@@ -160,7 +160,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="Gulp"><a href="#Gulp" class="headerlink" title="Gulp"></a>Gulp</h1><h2 id="什么是Gulp"><a href="#什么是Gulp" class="headerlink" title="什么是Gulp"></a>什么是Gulp</h2><p> Gulp 是一个自动化构建工具,可以用来提高开发效率 </p>
-<h5 id="Automate-and-enhance-your-workflow"><a href="#Automate-and-enhance-your-workflow" class="headerlink" title="Automate and enhance your workflow"></a>Automate and enhance your workflow</h5><h5 id="Gulp-的优点"><a href="#Gulp-的优点" class="headerlink" title="Gulp 的优点:"></a>Gulp 的优点:</h5><ol>
+<h5 id="Automate-and-enhance-your-workflow"><a href="#Automate-and-enhance-your-workflow" class="headerlink" title="Automate and enhance your workflow"></a>Automate and enhance your workflow</h5><h3 id="Gulp-的优点"><a href="#Gulp-的优点" class="headerlink" title="Gulp 的优点:"></a>Gulp 的优点:</h3><ol>
 <li>自动化</li>
 <li>流程控制</li>
 <li>网页性能优化</li>
@@ -170,7 +170,7 @@
 <li>方便处理多页面共用代码的部分</li>
 <li>编译less sass </li>
 </ol>
-<h5 id="GET-STARTED"><a href="#GET-STARTED" class="headerlink" title="GET STARTED"></a>GET STARTED</h5><h6 id="全局安装-gulp-cli"><a href="#全局安装-gulp-cli" class="headerlink" title="全局安装 gulp-cli"></a>全局安装 gulp-cli</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm i -g gulp-cli</div></pre></td></tr></table></figure>
+<h3 id="GET-STARTED"><a href="#GET-STARTED" class="headerlink" title="GET STARTED"></a>GET STARTED</h3><h6 id="全局安装-gulp-cli"><a href="#全局安装-gulp-cli" class="headerlink" title="全局安装 gulp-cli"></a>全局安装 gulp-cli</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm i -g gulp-cli</div></pre></td></tr></table></figure>
 <h6 id="初始化-package-json-文件"><a href="#初始化-package-json-文件" class="headerlink" title="初始化 package.json 文件"></a>初始化 package.json 文件</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm init -y</div></pre></td></tr></table></figure>
 <h6 id="将-gulp-安装到本地项目"><a href="#将-gulp-安装到本地项目" class="headerlink" title="将 gulp 安装到本地项目"></a>将 gulp 安装到本地项目</h6><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm i -g --save-dev gulp</div></pre></td></tr></table></figure>
 <h5 id="在项目目录下创建一个名字为-gulpfile-js-文件并写入以下内容"><a href="#在项目目录下创建一个名字为-gulpfile-js-文件并写入以下内容" class="headerlink" title="在项目目录下创建一个名字为 gulpfile.js 文件并写入以下内容"></a>在项目目录下创建一个名字为 gulpfile.js 文件并写入以下内容</h5><ol>
@@ -190,8 +190,17 @@
 </li>
 </ul>
 <ul>
-<li>运行sayHello<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ gulp sayHello</div></pre></td></tr></table></figure></li>
+<li>运行sayHello<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ gulp sayHello</div></pre></td></tr></table></figure>
+</li>
 </ul>
+<h3 id="Gulp-API"><a href="#Gulp-API" class="headerlink" title="Gulp API"></a>Gulp API</h3><ol>
+<li>gulp.src(globs[, options])</li>
+</ol>
+<blockquote>
+<p>用于读取文件</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 1. 读取空文件</span></div><div class="line">gulp.src(<span class="string">'./src/js'</span>)</div><div class="line"></div><div class="line"><span class="comment">// 2. 读取单文件</span></div><div class="line">gulp.src(<span class="string">'./src/js/index.js'</span>)</div><div class="line"></div><div class="line"><span class="comment">// 3. 读取js文件夹下的所有文件</span></div><div class="line">gulp.src(<span class="string">'./src/js/*'</span>)</div><div class="line"></div><div class="line"><span class="comment">// 4. 读取的是 js 根目录下的所有以 .js 结尾的文件</span></div><div class="line">gulp.src(<span class="string">'./src/js/*.js'</span>)</div><div class="line"></div><div class="line"><span class="comment">// 5. 递归读取js目录下所有的js文件</span></div><div class="line">gulp.src(<span class="string">'./src/js/**/*.js'</span>);</div><div class="line"></div><div class="line"><span class="comment">// 6. 读取js根目录下的main.js 和 mian.css</span></div><div class="line">gulp.src([<span class="string">'./src/js/main.js'</span>,<span class="string">'./src/js/main.css'</span>])</div><div class="line"></div><div class="line"><span class="comment">// 7. // 读取 client 里面所有以 .js 结尾的文件排除 client 中所有以 b 开头，以 .js 结尾的文件但是在排除的条件之外，读取 client/bad.js 文件</span></div><div class="line">gulp.src([<span class="string">'./client/**/*.js'</span>,<span class="string">'!./clinet/**/b*.js'</span>,<span class="string">'./client/**/bad.js'</span>])</div></pre></td></tr></table></figure>
+<h4 id="options"><a href="#options" class="headerlink" title="options"></a>options</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">gulp.task(<span class="string">'copy-js'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="comment">// gulp.src(['src/js/*.js', '!src/js/b*.js', 'src/js/ba.js'])</span></div><div class="line">  <span class="comment">// gulp.src(['src/js/*.js', '!src/js/b*.js'], &#123;</span></div><div class="line">  <span class="comment">//     base: './src/' </span></div><div class="line">  <span class="comment">// 默认会直接拷贝到 dist 根目录，如果希望让拷贝到 dist 中的 js 目录保持原来的文件结构，则把 js 的父目录 src 配置到 base 选项中就可以了</span></div><div class="line">  <span class="comment">//   &#125;)</span></div><div class="line">  <span class="comment">//   .pipe(gulp.dest('./dist'))</span></div><div class="line"></div><div class="line">  gulp.src(<span class="string">'./src/js/helper/*.js'</span>, &#123;</div><div class="line">      base: <span class="string">'./src/'</span> <span class="comment">// 默认会直接拷贝到 dist 根目录，如果希望让拷贝到 dist 中的 js 目录保持原来的文件结构，则把 js 的父目录 src 配置到 base 选项中就可以了</span></div><div class="line">    &#125;)</div><div class="line">    .pipe(gulp.dest(<span class="string">'./dist'</span>))</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 
       
 
